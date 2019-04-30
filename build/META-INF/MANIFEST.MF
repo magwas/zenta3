@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Zenta3-build
+Bundle-SymbolicName: zenta3-build
+Bundle-Version: 3.0.0.qualifier
+Automatic-Module-Name: zenta3-build

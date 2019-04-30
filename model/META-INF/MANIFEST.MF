@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: zenta3-model
+Bundle-SymbolicName: zenta3-model
+Bundle-Version: 3.0.0.qualifier
+Export-Package: org.rulez.demokracia.zenta3,
+ org.rulez.demokracia.zenta3.model,
+ org.rulez.demokracia.zenta3.modelelements,
+ org.rulez.demokracia.zenta3.testhelpers
+Automatic-Module-Name: zenta3-model
+Bundle-RequiredExecutionEnvironment: JavaSE-10
+Require-Bundle: org.apache.commons.io;bundle-version="2.2.0",
+ org.apache.commons.lang3;bundle-version="3.1.0",
+ mavendeps;bundle-version="3.0.0",
+ org.junit.jupiter.api;bundle-version="5.4.0"
+Bundle-ClassPath: .
+Import-Package: org.junit.platform.commons.annotation;version="1.4.0"

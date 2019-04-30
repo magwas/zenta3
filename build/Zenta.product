@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Zenta 3" uid="Zenta3" id="org.rulez.demokracia.zenta3.editor.product" application="org.rulez.demokracia.zenta3.editor.application" version="3.0.0" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>--module-path /opt/javafx-sdk-11.0.2/lib/ --add-modules=javafx.controls
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10</linux>
+   </vm>
+
+   <plugins>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.google.inject"/>
+      <plugin id="com.google.inject.assistedinject" fragment="true"/>
+      <plugin id="com.google.inject.multibindings" fragment="true"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.xml"/>
+      <plugin id="mavendeps"/>
+      <plugin id="org.apache.commons.io"/>
+      <plugin id="org.apache.commons.lang3"/>
+      <plugin id="org.apiguardian"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.fx.osgi" fragment="true"/>
+      <plugin id="org.eclipse.gef.common"/>
+      <plugin id="org.eclipse.gef.fx"/>
+      <plugin id="org.eclipse.gef.geometry"/>
+      <plugin id="org.eclipse.gef.geometry.convert.fx"/>
+      <plugin id="org.eclipse.gef.mvc.fx"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.osgi.util"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.junit"/>
+      <plugin id="org.junit.jupiter.api"/>
+      <plugin id="org.junit.jupiter.engine"/>
+      <plugin id="org.junit.jupiter.migrationsupport"/>
+      <plugin id="org.junit.jupiter.params"/>
+      <plugin id="org.junit.platform.commons"/>
+      <plugin id="org.junit.platform.engine"/>
+      <plugin id="org.junit.platform.launcher"/>
+      <plugin id="org.junit.platform.runner"/>
+      <plugin id="org.junit.platform.suite.api"/>
+      <plugin id="org.junit.vintage.engine"/>
+      <plugin id="org.opentest4j"/>
+      <plugin id="org.rulez.demokracia.zenta3.editor"/>
+      <plugin id="zenta3-model"/>
+   </plugins>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

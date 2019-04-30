@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://magwas.rulez.org/zenta.3" 
+		xmlns:zenta="http://magwas.rulez.org/zenta.3" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="model">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="element" type="zenta:element"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" use="required" type="xsd:ID"/>
+	</xsd:complexType>
+	<xsd:complexType name="element">
+		<xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="id" use="required" type="xsd:ID"/>
+		    </xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

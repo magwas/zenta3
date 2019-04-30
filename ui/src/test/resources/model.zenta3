@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model xmlns="http://magwas.rulez.org/zenta.3.0" ancestor="folder" id="TestModel"
+       name="Test Model">
+   <element xmlns="" ancestor="thing" id="thing" name="Thing">
+      <documentation>A thing is a thing is a thing</documentation>
+   </element>
+   <element xmlns="" ancestor="thing" id="folder" name="Folder">
+      <documentation>A thing which groups other things conceptionally</documentation>
+   </element>
+   <element xmlns="" ancestor="thing" id="basicrelation" name="Basic Relation"
+            source="thing"
+            target="thing">
+      <documentation>Denotes some kind of connection between two things</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="is_a" name="IsA_Relation" source="thing"
+            target="thing">
+      <documentation>A relation denoting that a thing is a kind of other thing</documentation>
+   </element>
+   <element xmlns="" ancestor="thing" id="vOJuIX8tu3" name="The Core Idea">
+      <documentation>This is my Core idea</documentation>
+   </element>
+   <element xmlns="" ancestor="thing" id="1Rm2gvnBGf" name="Association #0">
+      <documentation>I just realized, this is related to the core idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="CedYbpzvvb" source="vOJuIX8tu3"
+            target="1Rm2gvnBGf"/>
+   <element xmlns="" ancestor="thing" id="R0ebqKryRj" name="Association #1">
+      <documentation>I just realized, this is related to the core idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="SVJr1oLa2D" source="vOJuIX8tu3"
+            target="R0ebqKryRj"/>
+   <element xmlns="" ancestor="thing" id="eZdt2tTMP7" name="Association #2">
+      <documentation>I just realized, this is related to the core idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="ddKvWIQSaT" source="vOJuIX8tu3"
+            target="eZdt2tTMP7"/>
+   <element xmlns="" ancestor="thing" id="oIAypcPdH2" name="Association #3">
+      <documentation>I just realized, this is related to the core idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="Q4LOGucNNg" source="vOJuIX8tu3"
+            target="oIAypcPdH2"/>
+   <element xmlns="" ancestor="thing" id="J9V0jS2smt" name="Association #4">
+      <documentation>I just realized, this is related to the core idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="77J6LEt5tp" source="vOJuIX8tu3"
+            target="J9V0jS2smt"/>
+   <element xmlns="" ancestor="thing" id="GbqQ0JFLmm" name="Association #4-2">
+      <documentation>I just realized, this is related to the last idea!</documentation>
+   </element>
+   <element xmlns="" ancestor="basicrelation" id="H7gRBx4HHF" source="J9V0jS2smt"
+            target="GbqQ0JFLmm"/>
+</model>

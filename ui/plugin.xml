@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.eclipse.core.runtime.products" name="ZentaApplication" schema="schema/org.eclipse.core.runtime.products.exsd"/>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.rulez.demokracia.zenta3.editor.ZentaApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.rulez.demokracia.zenta3.editor.application"
+            name="Zenta 3">
+         <property
+               name="appName"
+               value="Zenta 3">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

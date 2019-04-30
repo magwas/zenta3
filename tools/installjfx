@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in base web controls fxml graphics media swing
+do
+    mvn -o install:install-file -DgroupId=org.openjfx -DartifactId=javafx-$i -Dversion=10.0.2 -Dpackaging=jar -Dfile=/opt/javafx-sdk-11.0.2/lib/javafx.$i.jar
+done
+mvn -o install:install-file -DgroupId=org.openjfx -DartifactId=javafx-swt -Dversion=10.0.2 -Dpackaging=jar -Dfile=/opt/javafx-sdk-11.0.2/lib/javafx-swt.jar
